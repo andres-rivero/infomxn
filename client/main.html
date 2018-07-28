@@ -1,0 +1,184 @@
+<head>
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+
+
+        <nav class="navbar navbar-light navbar-expand-md" style="background-color: #F8F8F8;">
+          <a class="navbar-brand container" href="#"><i>arpmex</i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+
+
+
+
+  <div class="container">
+      <h1 class="display-3">Tipo de Cambio Peso-Dolar</h1><br>
+      <h3 class="font-weight-light">Consulta el precio del dolar en bancos</h3>
+  </div><br>
+
+
+
+
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      {{> leaderboard}}
+
+
+
+
+    </div>
+
+    <div class="col-md-6">
+
+
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th><h4 class="font-weight-light">Institution</h4></th>
+            <th><h4 class="font-weight-light">Price</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src = "bloomberg.png"></td>
+            <td><h5 class="font-weight-light">19.05</h5></td>
+          </tr>
+          <tr>
+            <td><img src = "banxico.png"></td>
+            <td><h5 class="font-weight-light">19.1289</h5></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <br>
+
+  <div class="jumbotron jumbotron-fluid">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="container">
+      <h1>Jumbotron!!</h1>
+      <p>
+        <i class="fa fa-linkedin" style="font-size:24px"></i>&nbsp;
+        <i class="fa fa-facebook" style="font-size:24px"></i>&nbsp;
+        <i class="fa fa-twitter" style="font-size:24px"></i>
+      </p>
+    </div>
+  </div>
+
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+
+
+
+<template name="leaderboard">
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><h4 class="font-weight-light">Institution</h4></th>
+        <th><h4 class="font-weight-light">Buy</h4></th>
+        <th><h4 class="font-weight-light">Sell</h4></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src = "banamex.png"></td>
+        <td><h5 class="font-weight-light">{{banamex_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{banamex_sell}}</h5></td>
+      </tr>
+      <tr>
+        <td><img src = "bancomer.png"></td>
+        <td><h5 class="font-weight-light">{{bancomer_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{bancomer_sell}}</h5></td>
+      </tr>
+      <tr>
+        <td><img src = "banorte.png"></td>
+        <td><h5 class="font-weight-light">{{banorte_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{banorte_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "banregio.png"></td>
+        <td><h5 class="font-weight-light">{{banregio_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{banregio_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "cibanco.png"></td>
+        <td><h5 class="font-weight-light">{{cibanco_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{cibanco_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "hsbc.png"></td>
+        <td><h5 class="font-weight-light">{{hsbc_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{hsbc_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "monex.png"></td>
+        <td><h5 class="font-weight-light">{{monex_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{monex_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "santander.png"></td>
+        <td><h5 class="font-weight-light">{{santander_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{santander_sell}}</h5></td>
+      </tr>
+      <tr>
+      <td><img src = "scotiabank.png"></td>
+        <td><h5 class="font-weight-light">{{scotiabank_buy}}</h5></td>
+        <td><h5 class="font-weight-light">{{scotiabank_sell}}</h5></td>
+      </tr>
+    </tbody>
+  </table>
+
+</template>
